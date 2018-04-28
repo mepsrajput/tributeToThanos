@@ -3,19 +3,22 @@ body {
   margin: 0px;
   padding: 0px;
   background: url("https://images4.alphacoders.com/909/thumb-350-909185.jpg") repeat;
-
-  /* background: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc); */
+  background-color: linear-gradient(145deg, #03ccba ,#57a4c3, #a87fcc);
 }
-/* ----- Main Section -----------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------- */
 
+div.caption-text {
+   border-right: 3px ridge red ;
+   margin: 20px 60px auto;
+   font-family: Lato;
+   font-size: 18px;
+}
 
 .mainC {
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 auto;
   flex-direction: row;
-
+  margin-top: 45px;
 }
 
 .leftContainer {
@@ -26,18 +29,15 @@ body {
 	flex: 50%;
 }
 
-div.caption-text {
-   border-right: 3px ridge red ;
- margin: 20px 60px auto;
- }
+p {
+  text-align: justify;
+  padding: 25px;
+}
 
- .sty {
-   background-size: cover;
-   cursor: pointer;
-   box-shadow: 0 10px 25px rgba(0,0,0,.7);
-   &:hover {
-   box-shadow: 0 20px 20px rgba(0,0,0,.5);
-   }
+.mainC img {
+  width: 300px;
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 779px) {
     img {
@@ -48,10 +48,7 @@ div.caption-text {
     }
 }
 
-.caption-text{
-    font-family: Lato;
-    font-size: 18px;
-  }
+
   h2.background{
       background-color: #444444;
       color: white;
