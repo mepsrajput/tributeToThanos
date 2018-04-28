@@ -35,7 +35,7 @@ p {
 }
 
 .mainC img {
-  width: 300px !important;
+  width: 60% !important;
   margin: 0 auto !important;
 }
 
@@ -45,11 +45,16 @@ p {
 }
 
 @media screen and (max-width: 779px) {
-    img {
-      max-width: 90vw !important;
-    }
+
     .mainC {
       flex-direction: column;
+    }
+    .thumbnail img {
+      width: 90%;
+      margin: 0 auto;
+    }
+    div.caption-text {
+      margin: 8px auto;
     }
 }
 
